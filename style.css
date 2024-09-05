@@ -1,0 +1,63 @@
+body {
+  text-align: center;
+  background-color: #011f3f;
+}
+
+h1 {
+  font-size: 3rem;
+  font-family: "Press Start 2P", cursive;
+  color: #fef2bf;
+}
+
+a {
+  text-decoration: none;
+  color: #fef2bf;
+}
+
+/* main section */
+.row-1 .button {
+  margin: 50px 20px 20px;
+}
+.row-2 .button {
+  margin: 20px 20px 50px;
+}
+.button {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  border: 10px solid black;
+  border-radius: 15%;
+}
+.button:hover {
+  cursor: pointer;
+}
+
+.green {
+  background-color: green;
+}
+.red {
+  background-color: red;
+}
+.yellow {
+  background-color: yellow;
+}
+.blue {
+  background-color: blue;
+}
+
+footer {
+  font-family: "Indie Flower", cursive;
+  color: #fef2bf;
+  margin-top: 100px;
+}
+
+/* used from javaScript */
+
+.clicked {
+  box-shadow: 0 0 20px white;
+  background-color: gray;
+}
+
+.gameOver {
+  background-color: red;
+}
