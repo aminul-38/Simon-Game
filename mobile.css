@@ -1,4 +1,4 @@
-@media (min-width: 320px) {
+@media (max-width: 540px) {
   h1 {
     font-size: 1.5rem;
     margin: 50px auto 100px;
@@ -17,5 +17,11 @@
 
   footer {
     margin: 100px auto;
+  }
+}
+@media (max-width: 375px) {
+  .button {
+    width: 90px;
+    height: 90px;
   }
 }
