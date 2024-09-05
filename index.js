@@ -2,6 +2,7 @@ let gameRunning = false;
 let buttonSequence = [];
 let nextButtonIndex = -1;
 let nextButtonToBePressed = -1;
+let screenWidth = screen.width;
 
 // This function will add a new button in buttonSequence
 function generateNextButton() {
@@ -102,10 +103,30 @@ $(".button").click(function (event) {
       }
     } else {
       setDefult();
-      $("h1").text("Game Over, Press any key to Restart");
+      if (screenWidth <= 480) {
+        $("h1").text("Game Over, Tap Here to Restart");
+      } else {
+        $("h1").text("Game Over, Press any key to Restart");
+      }
       wrongButtonPressed();
     }
   }
 
   buttonPressed(pressedButtonColor);
+});
+
+/* code only for mobile device */
+
+if (screenWidth <= 480) {
+  $("h1").text("Tap Here to Start");
+}
+
+$("h1").on("click", function () {
+  if (gameRunning === false && screenWidth <= 480) {
+    gameRunning = true;
+    generateNextButton();
+    nextButton();
+
+    $("h1").text("Level 1");
+  }
 });

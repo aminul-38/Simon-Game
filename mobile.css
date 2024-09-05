@@ -1,6 +1,21 @@
 @media (min-width: 320px) {
+  h1 {
+    font-size: 1.5rem;
+    margin: 50px auto 100px;
+  }
+
+  .row-1 .button {
+    margin-top: 0;
+  }
+  .row-2 .button {
+    margin-bottom: 0;
+  }
   .button {
-    width: 100px;
-    height: 100px;
+    width: 125px;
+    height: 125px;
+  }
+
+  footer {
+    margin: 100px auto;
   }
 }
